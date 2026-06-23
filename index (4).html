@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Клим Милеев — Фриланс-услуги</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: 'Segoe UI', Arial, sans-serif; background: #0f0f1a; color: #e0e0e0; }
+
+    header {
+      background: linear-gradient(135deg, #1a1a2e, #16213e);
+      padding: 60px 20px;
+      text-align: center;
+      border-bottom: 2px solid #7c3aed;
+    }
+    header h1 { font-size: 2.6rem; color: #fff; }
+    header p { margin-top: 10px; font-size: 1.1rem; color: #a78bfa; }
+    .badge {
+      display: inline-block;
+      margin-top: 16px;
+      background: #7c3aed;
+      color: white;
+      padding: 6px 18px;
+      border-radius: 20px;
+      font-size: 14px;
+    }
+
+    nav {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      padding: 16px;
+      background: #16213e;
+      flex-wrap: wrap;
+    }
+    nav a {
+      color: #a78bfa;
+      text-decoration: none;
+      font-size: 15px;
+      transition: color 0.2s;
+    }
+    nav a:hover { color: #fff; }
+
+    section { max-width: 900px; margin: 50px auto; padding: 0 20px; }
+    section h2 { font-size: 1.6rem; color: #a78bfa; margin-bottom: 24px; border-left: 4px solid #7c3aed; padding-left: 12px; }
+
+    .cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 20px; }
+    .card {
+      background: #1a1a2e;
+      border: 1px solid #2d2d5e;
+      border-radius: 14px;
+      padding: 24px;
+      transition: transform 0.2s, border-color 0.2s;
+    }
+    .card:hover { transform: translateY(-4px); border-color: #7c3aed; }
+    .card .icon { font-size: 2rem; margin-bottom: 12px; }
+    .card h3 { font-size: 1.05rem; color: #fff; margin-bottom: 8px; }
+    .card p { font-size: 14px; color: #9ca3af; line-height: 1.6; }
+
+    .channels { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 20px; }
+    .channel-card {
+      background: #1a1a2e;
+      border: 1px solid #2d2d5e;
+      border-radius: 14px;
+      padding: 24px;
+    }
+    .channel-card h3 { color: #fff; margin-bottom: 8px; }
+    .channel-card p { font-size: 14px; color: #9ca3af; }
+    .tag {
+      display: inline-block;
+      background: #2d2d5e;
+      color: #a78bfa;
+      font-size: 12px;
+      padding: 3px 10px;
+      border-radius: 10px;
+      margin-top: 10px;
+    }
+
+    .contact-box {
+      background: #1a1a2e;
+      border: 1px solid #7c3aed;
+      border-radius: 14px;
+      padding: 32px;
+      text-align: center;
+    }
+    .contact-box p { color: #9ca3af; margin-bottom: 20px; font-size: 15px; }
+    .btn {
+      display: inline-block;
+      background: #7c3aed;
+      color: white;
+      padding: 12px 32px;
+      border-radius: 8px;
+      text-decoration: none;
+      font-size: 15px;
+      margin: 6px;
+      transition: background 0.2s;
+    }
+    .btn:hover { background: #6d28d9; }
+    .btn.outline {
+      background: transparent;
+      border: 1px solid #7c3aed;
+      color: #a78bfa;
+    }
+    .btn.outline:hover { background: #7c3aed; color: white; }
+
+    footer {
+      text-align: center;
+      padding: 24px;
+      color: #4b5563;
+      font-size: 13px;
+      margin-top: 60px;
+      border-top: 1px solid #1f1f3a;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Клим Милеев</h1>
+  <p>Фриланс-разработчик · Дизайнер · Контент-мейкер</p>
+  <span class="badge">🟢 Открыт для заказов</span>
+</header>
+
+<nav>
+  <a href="#services">Услуги</a>
+  <a href="#channels">Каналы</a>
+  <a href="#contact">Контакты</a>
+</nav>
+
+<section id="services">
+  <h2>Мои услуги</h2>
+  <div class="cards">
+    <div class="card">
+      <div class="icon">🎮</div>
+      <h3>Игры на Unity</h3>
+      <p>Разработка игр и игровых механик на движке Unity под любые платформы.</p>
+    </div>
+    <div class="card">
+      <div class="icon">🧊</div>
+      <h3>Low Poly модели</h3>
+      <p>Создание 3D моделей в стиле Low Poly в Blender для игр и анимации.</p>
+    </div>
+    <div class="card">
+      <div class="icon">🎨</div>
+      <h3>Дизайн для YouTube</h3>
+      <p>Превью, шапки, иконки, обложки — всё что нужно для красивого канала.</p>
+    </div>
+    <div class="card">
+      <div class="icon">✨</div>
+      <h3>AI-редактирование фото</h3>
+      <p>Обработка и улучшение фотографий с помощью искусственного интеллекта.</p>
+    </div>
+  </div>
+</section>
+
+<section id="channels">
+  <h2>Мои каналы</h2>
+  <div class="channels">
+    <div class="channel-card">
+      <h3>📺 YouTube — GTA Online</h3>
+      <p>Видео и стримы по GTA Online — экшен, приколы, фарм и многое другое.</p>
+      <span class="tag">YouTube</span>
+    </div>
+    <div class="channel-card">
+      <h3>🥽 YouTube — VR игры</h3>
+      <p>Обзоры и прохождения VR игр — погружение в виртуальную реальность.</p>
+      <span class="tag">YouTube</span>
+    </div>
+    <div class="channel-card">
+      <h3>✈️ Telegram канал</h3>
+      <p>Новости, обновления и контент — подписывайся чтобы не пропустить.</p>
+      <span class="tag">Telegram</span>
+    </div>
+  </div>
+</section>
+
+<section id="contact">
+  <h2>Связаться со мной</h2>
+  <div class="contact-box">
+    <p>Готов взяться за ваш проект! Пишите — обсудим детали и цену.</p>
+    <a href="https://kwork.ru/user/klim_mileev" class="btn">💼 Kwork</a>
+    <a href="https://t.me/kerugaofficial" class="btn outline">✈️ Telegram</a>
+  </div>
+</section>
+
+<footer>© 2025 Клим Милеев · Все права защищены</footer>
+
+</body>
+</html>
